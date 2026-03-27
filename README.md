@@ -35,7 +35,7 @@ for the interested reader and for the possibility of reproducing the results.
 
 * `cpg-qd/configs`: contains an example of a config file that can be used to launch experiments.
 * `cpg-qd/scripts`: contains all the python code for generating and analysing data. Entire interaction with this repository's code can happen through these files.
-* `cpg-qd/src`: The source code used in this project.
+* `cpg-qd/src`: The source code used in this project. <br>
     └ `biorobot`: adapatation of the [Bio-inspired Robotics Testbed](https://github.com/Co-Evolve/brt) <br>
     └ `cpg_convergence`: custom package with project specific source code.<br>
 * `brittle_star/analysis`: contains the code used for analysing the neural dynamics and gait kinematics.
