@@ -1,6 +1,6 @@
 # Stability-Driven CPG Design for More Effective Quality-Diversity in Evolutionary Robotics
 
-![CPG-QD Overview](assets/CPG-QD_overview.png)
+![CPG-QD Overview](assets/CPG-QD_overview_new.png)
 
 Code accompanying the paper:
 
