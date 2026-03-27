@@ -1,0 +1,40 @@
+ experiment:
+   seed: 420
+ wandb:
+   project: "CPGConvergence"
+   group: "b02" # e.g. "b01"
+   tags: ["open_es", "testing"]
+   notes: "b02_r01" # experiment_id, e.g., "b01_r04" 
+   run_name: "[{notes}] arm_setup {num_segments_per_arm} popsize {popsize} ngen {ngen}"
+   enable: True # wether run will be logged or not, True or False
+ morphology:
+   num_arms: 5
+   num_segments_per_arm: [ 5, 5, 5, 5, 5 ]
+   use_p_control: True
+ arena:
+   size: !!python/tuple [ 8, 8 ]
+   sand_ground_color: False
+ simulation:
+   nsteps: 135 # default frequency: 25 control steps per second (add some extra to get some margin after last cycle)
+   nthread: 8 # if more than number of available physical threads, argument is not used. Use when working locally to avoid crash. On Linux laptop: max is 14
+ rendering:
+   camera: [0, 1] # 0 top view arena, 1 top view brittle sta, can we int or list of ints
+   shape: !!python/tuple [ 480, 640 ] # options include: [ 480, 640 ] , # does not yet work: [ 720, 1280 ] , [ 1080, 1920 ]
+   transparent: False
+   color_contacts: True
+ evaluation:
+   reward_expr: "x-distance" # options, "x-distance", "xy-distance"
+   cost_expr: null # options: null, "actuator_forces"
+   penalty_expr: null # options: null, "xy_disk_rotation", "z_disk_rotation", "xyz_disk_rotation"
+   additive_or_multiplicative: "multiplicative"
+   alpha: 1. # Scales the cost term
+   beta: 1. # Scales the penalty term
+ evolution:
+   popsize: 100
+   ngen: 200
+
+
+
+
+
+

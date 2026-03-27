@@ -1,0 +1,39 @@
+# ignore the wandb directory
+wandb/
+# ignore cpg_env
+cpg_env
+# ignore tmp
+tmp/
+# ignore log_nohup
+log_nohup/
+# ignore the __pychache__ directory and .pyc files
+__pycache__/
+*.pyc
+*__pycache__/
+# ignore .ipynb_checkpoints directories
+.ipynb_checkpoints/
+*ipynb_checkpoints/
+# ignore all .mp4 files - video files usually
+*.mp4
+# ignore all .jpg files - image files usually
+*.jpg
+# ignore experiments directory
+experiments/
+# don't ignore the run directories
+!run/
+# ignore results directory
+results/
+# ignore hpc_jobs_logs
+hpc_jobs_logs/
+# ignore .venv_path
+.venv_path
+
+
+
+
+
+
+
+
+
+
