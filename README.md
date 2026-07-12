@@ -50,8 +50,25 @@ for the interested reader and for the possibility of reproducing the results.
 
 
 ## Citation
-
-TBA (bibtex format)
+```
+@inproceedings{10.1145/3795095.3805096,
+author = {Pex, Matthias and Marzougui, Dries and Wyffels, Francis},
+title = {Stability-Driven CPG Design for More Effective Quality-Diversity in Evolutionary Robotics},
+year = {2026},
+isbn = {9798400724879},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3795095.3805096},
+doi = {10.1145/3795095.3805096},
+abstract = {Evolutionary robotics commonly employs quality-diversity algorithms to discover diverse, high-performing behaviours. Meanwhile, central pattern generators provide a compact neural dynamical model for robotic locomotion control. Their differential-equation-based formulation induces smooth, rhythmic actions, while also reducing the dimensionality of the search space. However, the widely used Kuramoto-inspired central pattern generators exhibit nonlinear dynamics, for which convergence depends sensitively on network connectivity and coupling parameters. When convergence is slow or unstable, controller evaluations become noisy, which substantially degrades quality-diversity performance. This work introduces an analytical criterion to assess and guarantee the convergence properties of Kuramoto-based central pattern generators prior to optimisation or simulation. The method yields principled guidelines for selecting connectivity structures and coupling strengths based on the eigenvalues of the Laplacian of the connectivity graph. Experiments on a simulated brittle star robot demonstrate that adhering to this criterion, significantly improves the efficiency and discovery of coordinated gaits. The criterion (a) predicts stable convergence from network structure alone, (b) enhances both the breadth and quality of exploration, and (c) scales naturally to morphologies of arbitrary complexity.},
+booktitle = {Proceedings of the Genetic and Evolutionary Computation Conference},
+pages = {115–124},
+numpages = {10},
+keywords = {evolutionary robotics, central pattern generators, evolvability, quality diversity, parameter tuning, kuramoto model},
+location = {Centro Internacional de Convenciones CIC-ANDE, San Jose, Costa Rica},
+series = {GECCO '26}
+}
+```
 
 ## License
 
